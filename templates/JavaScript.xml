@@ -49,6 +49,7 @@
   <template name="ctor" value="constructor($PARAM$) {&#10;    $END$&#10;};" description="contructor es6" toReformat="false" toShortenFQNames="true">
     <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
+      <option name="JS_STATEMENT" value="true" />
       <option name="TypeScript" value="true" />
     </context>
   </template>
@@ -82,6 +83,13 @@
     <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="im" value="import { $END$ } from '$LIBRARY$'" description="import statment" toReformat="true" toShortenFQNames="true">
+    <variable name="LIBRARY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
 </templateSet>
