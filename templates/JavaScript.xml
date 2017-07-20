@@ -85,7 +85,7 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="im" value="import { $END$ } from '$LIBRARY$'" description="import statment" toReformat="true" toShortenFQNames="true">
+  <template name="im" value="import {$END$} from '$LIBRARY$'" description="import statment" toReformat="true" toShortenFQNames="true">
     <variable name="LIBRARY" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JS_STATEMENT" value="true" />
